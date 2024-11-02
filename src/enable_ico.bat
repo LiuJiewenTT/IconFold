@@ -65,7 +65,7 @@ if /I "%2" == "/S" (
 	)
 
 	@REM echo %~1
-	attrib "%~1" +S +H +R
+	attrib "%~1" +S +H
 	attrib "%~1"
 goto:eof
 

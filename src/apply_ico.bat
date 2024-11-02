@@ -46,7 +46,7 @@ if /I "%2" == "/S" (
 	xcopy /H "%~dp0res_ico\*" "%~1" /Y /Q /R
 	for /f "usebackq delims=" %%i in (`dir /b "%~dp0res_ico\" /A:H`) do (
 		@REM echo %%i
-		attrib "%~1\%%i" +R +S +H
+		attrib "%~1\%%i" +S +H
 		attrib "%~1\%%i"
 	)
 	attrib "%~1" +R
